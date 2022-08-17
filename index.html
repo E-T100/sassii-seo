@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DecoFest</title>
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--Cargar la página rápidamente-->
+    <link rel="preload" href="css/style.css" as="style" />
+    <!--Hoja de estilos CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Ícono-->
+    <link rel="icon" href="imgs/decofest-logo.png" />
+  </head>
+
+  <!--Comienza body-->
+  <body>
+    <!-- Comienza header -->
+    <header>
+      <!--Caja Violeta-->
+      <div class="div-purple">
+        <h2>
+          50% de descuento en nuestro curso de decoración profesional con globos
+        </h2>
+      </div>
+
+      <!--Barra de navegación 2 (Funcional)-->
+      <nav class="navbar navbar-expand-md nav-black pd-dos-cero">
+        <div class="container">
+          <a
+            class="nav-link active a-yellow"
+            aria-current="page"
+            href="index.html"
+            >Inicio</a
+          >
+          <button
+            class="navbar-toggler navbar-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon light"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link a-blanco" href="cumpleanos.html"
+                >Cumpleaños y Pasteles</a
+              >
+              <a class="nav-link a-blanco" href="arcos.html">Arcos</a>
+              <a class="nav-link a-blanco" href="bouquets.html">Bouquets</a>
+              <a class="nav-link a-blanco" href="arreglos.html"
+                >Arreglos Personalizados</a
+              >
+              <a class="nav-link a-blanco" href="contacto.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carrusel de imágenes -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="imgs/header-uno-pexels-davide-de-giovanni-3171823.jpg"
+              class="d-block w-100"
+              alt="Banner publicitario de maquillaje"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="imgs/header-dos-pexels-helena-lopes-10336832.jpg"
+              class="d-block w-100"
+              alt="Banner de make up"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <!--Comienza main con presentación de los paquetes de decoración-->
+    <main class="container b none" id="tendencias">
+      <!--Article de main con tendencias-->
+      <article id="tendencias" class="tendencias text-center">
+        <h1>ELIGE TU PAQUETE</h1>
+        <p>
+          Familiarizarte con nuestras decoraciones haciendo clic en el botón que
+          dice Aprender Más debajo de cada paquete para descubrir cómo puede
+          lucir tu próximo evento.
+        </p>
+      </article>
+    </main>
+
+    <hr />
+    <!--1 Card B-->
+    <div class="card mb-3 container b-none w-100-75">
+      <div class="row g-0 d-flex flex-row-reverse">
+        <div class="col-md-7">
+          <div class="card-body tendencia-text">
+            <h3 class="card-title">CUMPLEAÑOS Y PASTELES</h3>
+          </div>
+          <div class="card-body tendencia-text">
+            <p class="card-text">
+              La decoración en una fiesta de cumpleaños debe ser única para que
+              el festejado tenga recuerdos inolvidables de este evento.
+            </p>
+            <p>
+              ¿No estás seguro de cuál es el mejor tema para el cumpleañero?
+            </p>
+            <p>Ve nuestra galería de imágenes para darte una idea.</p>
+          </div>
+          <div class="ver-mas container">
+            <a
+              class="boton boton-primario"
+              href="cumpleanos.html"
+              target="_blank"
+              >VER MÁS</a
+            >
+          </div>
+        </div>
+        <div class="col-md-5 section-tendencia-img">
+          <img
+            src="imgs/cumpleanos-39.jpg"
+            alt="Globos Para Cumpleaños"
+            class="img-fluid rounded-start tendencia-imagen"
+            width="300px"
+            height="300px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 Card B -->
+    <div class="card mb-3 container b-none w-100-75">
+      <div class="row g-0 d-flex flex-row-reverse">
+        <div class="col-md-7">
+          <div class="card-body tendencia-text">
+            <h3 class="card-title">ARCOS</h3>
+          </div>
+          <div class="card-body tendencia-text">
+            <p class="card-text">
+              Un arco da vida a la entrada del lugar en el que se celebra el
+              festejo. Además, hace que los invitados identifiquen el lugar
+              inmediatamente y evita que se retrasen a la fiesta.<br /><br />
+              Si vas a celebrar un cumpleaños, boda, graduación, despedida de
+              solter@ o baby shower, esta decoración no te puede faltar.
+            </p>
+          </div>
+          <div class="ver-mas container">
+            <a class="boton boton-primario" href="arcos.html" target="_blank"
+              >VER MÁS</a
+            >
+          </div>
+        </div>
+        <div class="col-md-5 section-tendencia-img">
+          <img
+            src="imgs/arco-de-globos.jpg"
+            alt="Foto de arco de globos"
+            class="img-fluid rounded-start tendencia-imagen"
+            width="300px"
+            height="300px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Card B -->
+    <div class="card mb-3 container b-none w-100-75">
+      <div class="row g-0 d-flex flex-row-reverse">
+        <div class="col-md-7">
+          <div class="card-body tendencia-text">
+            <h3 class="card-title">BOUQUETS</h3>
+          </div>
+          <div class="card-body tendencia-text">
+            <p class="card-text">
+              Un bouquet es un arreglo de un grupo de globos con una temática
+              definida. <br />
+              Si tienes poco tiempo para presentar un arreglo sofisticado de
+              globos esta opción es la indicada para ti.
+            </p>
+          </div>
+          <div class="ver-mas container">
+            <a class="boton boton-primario" href="bouquets.html" target="_blank"
+              >VER MÁS</a
+            >
+          </div>
+        </div>
+        <div class="col-md-5 section-tendencia-img">
+          <img
+            src="imgs/bouquet-de-globos.jpg"
+            alt="Foto de bouquet de globos"
+            class="img-fluid rounded-start tendencia-imagen"
+            width="300px"
+            height="300px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Card B -->
+    <div class="card mb-3 container b-none w-100-75">
+      <div class="row g-0 d-flex flex-row-reverse">
+        <div class="col-md-7">
+          <div class="card-body tendencia-text">
+            <h3 class="card-title">ARREGLOS PERSONALIZADOS</h3>
+          </div>
+          <div class="card-body tendencia-text">
+            <p class="card-text">
+              Un arreglo personalizado se compone de una decoración de globos
+              acompañado de los dulces y/o bebidas favoritas del festejado.
+            </p>
+          </div>
+          <div class="ver-mas container">
+            <a class="boton boton-primario" href="arreglos.html" target="_blank"
+              >VER MÁS</a
+            >
+          </div>
+        </div>
+        <div class="col-md-5 section-tendencia-img">
+          <img
+            src="imgs/arreglo-de-globos.jpg"
+            alt="Foto de arreglo de globos"
+            class="img-fluid rounded-start tendencia-imagen"
+            width="300px"
+            height="300px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--Container Contacto-->
+    <div class="aprender container">
+      <h3 class="text-center pd-botton">pide tu paquete aquí</h3>
+      <a class="boton boton-primario" href="contacto.html" target="_blank"
+        >CONTACTO</a
+      >
+    </div>
+
+    <!-- Comienza footer -->
+    <footer class="footer">
+      <!-- Div con container y footer -->
+      <div class="container footer-org">
+        <div class="footer-img">
+          <img src="imgs/decofest-logo.png" alt="Logo decofest" width="50%" />
+        </div>
+
+        <div class="footer-lema">
+          <p>
+            Local 21, Mercado Zacatito Sanctorum 122, Colonia: Argentina
+            Poniente, Alcaldía Miguel Hidalgo, CP 11230, CDMX
+          </p>
+        </div>
+
+        <div class="footer-redes">
+          <h2>SÍGUENOS</h2>
+          <div>
+            <a href="https://www.facebook.com" target="_blank">
+              <img
+                src="imgs/facebook-icon.png"
+                alt="Logo de facebook"
+                width="13.39px"
+              />
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <img
+                src="imgs/instagram-icon.png"
+                alt="Logo de instagram"
+                width="25.01px"
+              />
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank">
+              <img
+                src="imgs/whatsapp-icon.png"
+                alt="Logo de whatsapp"
+                width="30.78px"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-mantener">
+          <h2>SUSCRÍBETE A NUESTRO NEWSLETTER</h2>
+          <p>
+            Recibe las últimas noticias sobre decoraciones, promociones y cursos
+            directamente a tu correo electrónico.
+          </p>
+          <form action="" method="post" id="manten" class="pd-top-dos">
+            <label for="email"></label>
+            <input
+              class="input input-primario"
+              type="email"
+              placeholder="Correo electrónico"
+              name="email"
+              id="email"
+            />
+            <input
+              class="boton boton-secundario"
+              type="submit"
+              value="Enviar"
+            />
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
